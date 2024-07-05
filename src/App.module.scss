@@ -1,0 +1,51 @@
+@import "./styles/variables.scss";
+
+.mainContainer {
+  position: relative;
+  width: 1440px;
+  height: 100%;
+  background: $bg;
+  display: grid;
+  padding: 48px 82px 0 62px;
+  grid-template-columns: 3.5fr 1fr;
+  z-index: 5;
+
+  .bgContainer {
+    position: absolute;
+
+    height: 100vh;
+
+    top: 0;
+    right: 0;
+
+    z-index: -1;
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .mainContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px 16px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .mainContainer {
+    .bgContainer {
+      height: 50vh;
+      right: calc(70% - 50vw);
+    }
+  }
+}

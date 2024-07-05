@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+
+.widget {
+  border-radius: 12px;
+  background: $bt-tr;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 8px 19px 8px 14.5px;
+  gap: 8px;
+  width: 134px;
+  height: 54px;
+
+  .texts{
+
+    .text{
+      font-size: 1.2rem;
+      color: $sec-text;
+      font-weight: 400;
+      line-height: 12px;
+    }
+
+    .name{
+      font-size: 2rem;
+      color: $sec-text;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}

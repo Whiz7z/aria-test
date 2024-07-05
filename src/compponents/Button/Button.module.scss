@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.button{
+  background: $gradient-bg;
+  
+  border: none;
+  cursor: pointer;
+  width: 532px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  font-size: 2.8rem;
+  color: $dark-text;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 1.6rem;
+  padding-top: 4px;
+  box-shadow: 0px 0px 150px 0px rgba(165, 191, 180, 0.42);
+}
+
+
+
+@media screen and (max-width: 1250px) {
+  .button{
+    justify-self: center;
+  }
+
+}
+
+
+@media screen and (max-width: 880px) {
+  .button{
+    width: 100%;
+    font-size: 20px;
+    height: 48px;
+  }
+}
